@@ -47,12 +47,12 @@ Various skins allow menu customization.  In my case, I am using the "Arctic Zeph
 * Lights-Events   - RunScript(script.limitlessLightControl,"toggle") 
 
 ### Screenshots
-![001](http://ibin.co/2ThdZVxCKIeO)
-![002](http://ibin.co/2ThdhwbgU6rI)
-![003](http://ibin.co/2ThdmJc0iO0H)
-![004](http://ibin.co/2ThdqgcKwpXM)
-![005](http://ibin.co/2ThduQuKZpyK)
-![006](http://ibin.co/2The03LK0tmr)
+[![001](http://ibin.co/2ThgIQN5py3G)](http://ibin.co/2ThdZVxCKIeO)
+[![002](http://ibin.co/2ThgLEaaYh2v)](http://ibin.co/2ThdhwbgU6rI)
+[![003](http://ibin.co/2ThgNjRuyQB1)](http://ibin.co/2ThdmJc0iO0H)
+[![004](http://ibin.co/2ThgQXfPh7Ao)](http://ibin.co/2ThdqgcKwpXM)
+[![005](http://ibin.co/2ThgTLsuPou2)](http://ibin.co/2ThduQuKZpyK)
+[![006](http://ibin.co/2ThgWA6P8VZA)](http://ibin.co/2The03LK0tmr)
 
 ### ToDo
 * Disco Mode (easy to do)
