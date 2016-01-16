@@ -1,5 +1,6 @@
 from limitlesslight import *
 from limitlessbridge import *
+import utils
 
 class LimitlessScene(object):
 
@@ -11,12 +12,15 @@ class LimitlessScene(object):
 
     def addLight(self,light):
         'type light: LimitlessLight'
+        utils.log_verbose("LimitlessScene.addLight: " + str(light))
         if (light):
             lighttype= light.type
             lightid  = light.groupid
             bridge   = light.bridge
-            self.lightGroups.update({bridge:{lightid:light}})
-            a='b'
+            if bridge not in self.lightGroups:
+                self.lightGroups[bridge] = {lightid:light}
+            #self.lightGroups.update({bridge:{lightid:light}})
+            self.lightGroups[bridge][lightid] = light
 
     def addLights(self,lights):
         for light in lights:

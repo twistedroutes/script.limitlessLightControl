@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="script.limitlessLightControl" name="LimitlessLightControl" version="2016.01.16.1754" provider-name="gjj">
+<addon id="script.limitlessLightControl" name="LimitlessLightControl" version="2016.01.16.1834" provider-name="gjj">
   <requires>
 		<import addon="xbmc.python" version="2.14.0"/>
     <import addon="script.module.requests" version="2.3.0" optional="false"/>

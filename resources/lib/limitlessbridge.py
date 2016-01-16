@@ -3,6 +3,7 @@ import time
 import threading
 from limitlesslight import *
 from limitlessscene import *
+import utils
 
 class LimitlessBridge():
     """The LimitlessLED/MiLight bridge"""
@@ -23,11 +24,13 @@ class LimitlessBridge():
     def applyScene(self,scene):
         # get our bridge elements from the scenes lightGroups
         lights = scene.getLights(self)
+        utils.log_verbose("Number of LightGroups: " + str(len(lights)))
         for light in lights:
             animate=scene.animate
             reference = self.state[light.groupid]
             if reference is None:
                     animate=0
+            utils.log_verbose("Lighting: " + str(light))
             self.light_scene(light,scene.animate,reference,scene.animateBrightness)
             self.state[light.groupid] = light.clone()
         return
