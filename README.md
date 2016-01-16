@@ -1,6 +1,6 @@
 ## script.LimitlessLightControl
 
-This project enables control of LimitlessLED/MiLight bridges and light groups directly from Kodi without the need for running an additional home automation controller.
+This project enables control of [LimitlessLED](http://limitlessled.com)/[MiLight](http://www.milight.com/) bridges and light groups directly from Kodi without the need for running an additional home automation controller.
 It has the ability to set lighting scenes based on Kodi activity (e.g. when playing a video)
 
 ### Setup
@@ -47,10 +47,15 @@ Various skins allow menu customization.  In my case, I am using the "Arctic Zeph
 * Lights-Events   - RunScript(script.limitlessLightControl,"toggle") 
 
 ### Screenshots
-
+![001](http://ibin.co/2ThdZVxCKIeO)
+![002](http://ibin.co/2ThdhwbgU6rI)
+![003](http://ibin.co/2ThdmJc0iO0H)
+![004](http://ibin.co/2ThdqgcKwpXM)
+![005](http://ibin.co/2ThduQuKZpyK)
+![006](http://ibin.co/2The03LK0tmr)
 
 ### ToDo
-* Disco Mode
-* Multiple bridges
+* Disco Mode (easy to do)
+* Multiple bridges (need more lights and bridges)
 * Dynamic TV/Movie color (based on average picture color)
 * Dynamic Music color (based on music beat)
