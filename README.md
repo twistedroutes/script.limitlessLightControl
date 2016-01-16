@@ -12,31 +12,31 @@ While there are many options, setup is fairly straight forward.
 Lighting scenes can be automatically applied when an event occurs (activity)
 * Enable Activities
 * Select which scene should apply to each activity
-*** Movie    - When played from your library, we can differentiate between movies and TV
-*** TV       - again, when played from your library
-*** Video    - When video playback starts, but the source is not your library (e.g. a streaming plugin or direcly from file/NAS/SMB etc) we can't differentiate.  WOrking on ways to differentiate
-*** Music    - when you are playing music (note the "disco" option of the lights is not yet implemented.)
-*** Stop     - when playback ends, is stopped or terminates
-*** Pause    - when playback is paused (intermission :-) )
-*** Startup  - when Kodi starts (when script starts in reality)
-*** Shutdown - when kodi shutsdown/script shuts down
-** to do nothing when an activity occurs, select the "None" scene
+  * Movie    - When played from your library, we can differentiate between movies and TV
+  * TV       - again, when played from your library
+  * Video    - When video playback starts, but the source is not your library (e.g. a streaming plugin or direcly from file/NAS/SMB etc) we can't differentiate.  WOrking on ways to differentiate
+  * Music    - when you are playing music (note the "disco" option of the lights is not yet implemented.)
+  * Stop     - when playback ends, is stopped or terminates
+  * Pause    - when playback is paused (intermission :-) )
+  * Startup  - when Kodi starts (when script starts in reality)
+  * Shutdown - when kodi shutsdown/script shuts down
+    * to do nothing when an activity occurs, select the "None" scene
 * Now go configure the scenes
 
 #### Scenes
 Scenes configure a lighting configuration (which lights/lightGroups, color, brightness etc)
 * Select the lightGroups to be involved
 * Configure the color and Brightness
-** 0 Brightness = off
+  * 0 Brightness = off
 * Scenes available to configure are
-** Normal	- recommend using this as you "on" light
-** Dimmed	- recommend setting this as your preferred dimmed or 'sexy-time' light
-** Reading  - recommend an orange or yellow, slightly dimmed setting which seems comfortable for reading
-** Video    - recommend a red or blue light, works well behind the TV
-** Movie    - recommend a red or blue light, works well behind the TV
-** TV       - recommend a red or blue light, works well behind the TV
-** Music    - recommend...no recommendation, I'm just not cool enough
-** Off      - recommend using this to turn desired lights off.  I sued this as my schutdown activities scene
+  * Normal	- recommend using this as you "on" light
+  * Dimmed	- recommend setting this as your preferred dimmed or 'sexy-time' light
+  * Reading  - recommend an orange or yellow, slightly dimmed setting which seems comfortable for reading
+  * Video    - recommend a red or blue light, works well behind the TV
+  * Movie    - recommend a red or blue light, works well behind the TV
+  * TV       - recommend a red or blue light, works well behind the TV
+  * Music    - recommend...no recommendation, I'm just not cool enough
+  * Off      - recommend using this to turn desired lights off.  I sued this as my schutdown activities scene
 
 #### Menu Integration
 Various skins allow menu customization.  In my case, I am using the "Arctic Zephyr" skin and have configured various actions (see the screenshots)
