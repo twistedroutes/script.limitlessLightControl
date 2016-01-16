@@ -31,16 +31,50 @@ class Main(object):
                 scene.addLight(light)
         self.bridge.applyScene(scene)
 
+def enabledDialog():
+    dialog = xbmcgui.Dialog().ok("Activities Enabled","Scenes will be applied according to your activity settings")
+def disabledDialog():
+    dialog = xbmcgui.Dialog().ok("Activities Disabled","Scenes will be no loger be applied.  You may still manually control the scene.")
+
+# Args:
+# argv[1] (first argument)
+#  "scene"   - will configure a named scene.  
+#            - argv[2] - scene name ("TV","Movie","Normal","Off","Reading","Dimmed","Video","Music" etc.)
+#  "toggle"  - will toggle activity handling state
+#  "activity"- will set activity handling state
+#            - argv[2] - "true"|"false"
+#  "settings"- will open settings dialog
+#  None      - will open an options dialog to allow user to choose the above capabilities
 if __name__ == "__main__":
     count = len(sys.argv) - 1
+    activityState = utils.get_bool_setting("activity_enable")
+    currentState = "Enabled" if activityState else "Disabled"
+    toggleState = "Disable" if activityState else "Enable"
     if count > 0:
-        Main(sys.argv[1])
-        
+        if sys.argv[1] == "scene":
+            Main(sys.argv[2])
+        elif sys.argv[1] == "toggle":
+            val = "false" if activityState else "true"
+            utils.set_setting("activity_enable",val)
+            if val == "false":
+                disabledDialog()
+            else:
+                enabledDialog()
+        elif sys.argv[1] == "activity":
+            val = "true"
+            try:
+                val = "true" if sys.argv[2] == "true" else "false"
+            except:
+                pass
+            utils.set_setting("activity_enable",val)
+            if val == "true":
+                enabledDiaglog()
+            else:
+                disabledDialog()
+        elif sys.argv[1] == "settings":
+            utils.open_settings()
     else:
         dialog = xbmcgui.Dialog()
-        activityState = utils.get_bool_setting("activity_enable")
-        currentState = "Enabled" if activityState else "Disabled"
-        toggleState = "Disable" if activityState else "Enable"
         options = sorted([elem for elem in SCENES.keys() if elem!="None"])
         change_index = len(options)
         options.append(" - " + toggleState + " Activities -")
@@ -54,9 +88,9 @@ if __name__ == "__main__":
             utils.open_settings()
         elif txt == " - Enable Activities -":
             utils.set_setting("activity_enable","true")
-            dialog = xbmcgui.Dialog().ok("Activities Enabled","Scenes will be applied according to your activity settings")
+            enabledDialog()
         elif txt == " - Disable Activities -":
             utils.set_setting("activity_enable","false")
-            dialog = xbmcgui.Dialog().ok("Activities Disabled","Scenes will be no loger be applied.  You may still manually control the scene.")
+            disabledDialog()
         pass
 
