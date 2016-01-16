@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<settings>
+  <category label="Bridge">
+      <setting label="Host" type="ipaddress" id="b0_host" default="192.168.0.249"/>
+      <setting label="Port" type="number" id="b0_port" default="8899"/>
+  </category>
+  <category label="Activities">
+    <setting label="Enable Activities" type="bool" id="activity_enable" default="false"/>
+    <setting label="Video Lights" type="labelenum" id="activity_video" values="None|Off|Normal|Dimmed|Reading|Video|Movie|TV|Music" default="Video" enable="eq(-1,true)" subsetting="true"/>
+    <setting label="Movie Lights" type="labelenum" id="activity_movie" values="None|Off|Normal|Dimmed|Reading|Video|Movie|TV|Music" default="Movie" enable="eq(-2,true)" subsetting="true"/>
+    <setting label="TV Lights" type="labelenum" id="activity_tv" values="None|Off|Normal|Dimmed|Reading|Video|Movie|TV|Music" default="TV" enable="eq(-3,true)" subsetting="true"/>
+    <setting label="Music Lights" type="labelenum" id="activity_music" values="None|Off|Normal|Dimmed|Reading|Video|Movie|TV|Music" default="Music" enable="eq(-4,true)" subsetting="true"/>
+    <setting label="Stop Lights" type="labelenum" id="activity_stop" values="None|Off|Normal|Dimmed|Reading|Video|Movie|TV|Music" default="Normal" enable="eq(-5,true)" subsetting="true"/>
+    <setting label="Pause Lights" type="labelenum" id="activity_pause" values="None|Off|Normal|Dimmed|Reading|Video|Movie|TV|Music" default="Dimmed" enable="eq(-6,true)" subsetting="true"/>
+    <setting label="Startup Lights" type="labelenum" id="activity_startup" values="None|Off|Normal|Dimmed|Reading|Video|Movie|TV|Music" default="Normal" enable="eq(-7,true)" subsetting="true"/>
+    <setting label="Shutdown Lights" type="labelenum" id="activity_shutdown" values="None|Off|Normal|Dimmed|Reading|Video|Movie|TV|Music" default="Off" enable="eq(-8,true)" subsetting="true"/>
+  </category>
+  <category label="Normal Light">
+    <setting label="All" type="bool" id="b0_l0_normal_enable" default="false"/>
+    <setting label="- Color" type="labelenum" id="b0_l0_normal_color" values="white|off|violet|royal_blue|baby_blue|aqua|mint|seafoam_green|green|lime_green|yellow|yellow_orange|orange|red|pink|fuchsia|lilac|lavender" default="white" enable="eq(-1,true)" subsetting="true"/>
+    <setting label="- Brightness" type="slider" id="b0_l0_normal_brightness" default="25" range="0,1,28"  option="int" enable="eq(-2,true)" subsetting="true"/>
+    <setting type="sep"/>
+    <setting label="Group 1" type="bool" id="b0_l1_normal_enable" default="false"/>
+    <setting label="- Color" type="labelenum" id="b0_l1_normal_color" values="white|off|violet|royal_blue|baby_blue|aqua|mint|seafoam_green|green|lime_green|yellow|yellow_orange|orange|red|pink|fuchsia|lilac|lavender" default="white" enable="eq(-1,true)" subsetting="true"/>
+    <setting label="- Brightness" type="slider" id="b0_l1_normal_brightness" default="25" range="0,1,28"  option="int" enable="eq(-2,true)" subsetting="true"/>
+    <setting type="sep"/>
+    <setting label="Group 2" type="bool" id="b0_l2_normal_enable" default="false"/>
+    <setting label="- Color" type="labelenum" id="b0_l2_normal_color" values="white|off|violet|royal_blue|baby_blue|aqua|mint|seafoam_green|green|lime_green|yellow|yellow_orange|orange|red|pink|fuchsia|lilac|lavender" default="white" enable="eq(-1,true)" subsetting="true"/>
+    <setting label="- Brightness" type="slider" id="b0_l2_normal_brightness" default="25" range="0,1,28"  option="int" enable="eq(-2,true)" subsetting="true"/>
+    <setting type="sep"/>
+    <setting label="Group 3" type="bool" id="b0_l3_normal_enable" default="false"/>
+    <setting label="- Color" type="labelenum" id="b0_l3_normal_color" values="white|off|violet|royal_blue|baby_blue|aqua|mint|seafoam_green|green|lime_green|yellow|yellow_orange|orange|red|pink|fuchsia|lilac|lavender" default="white" enable="eq(-1,true)" subsetting="true"/>
+    <setting label="- Brightness" type="slider" id="b0_l3_normal_brightness" default="25" range="0,1,28"  option="int" enable="eq(-2,true)" subsetting="true"/>
+    <setting type="sep"/>
+    <setting label="Group 4" type="bool" id="b0_l4_normal_enable" default="false"/>
+    <setting label="- Color" type="labelenum" id="b0_l4_normal_color" values="white|off|violet|royal_blue|baby_blue|aqua|mint|seafoam_green|green|lime_green|yellow|yellow_orange|orange|red|pink|fuchsia|lilac|lavender" default="white" enable="eq(-1,true)" subsetting="true"/>
+    <setting label="- Brightness" type="slider" id="b0_l4_normal_brightness" default="25" range="0,1,28"  option="int" enable="eq(-2,true)" subsetting="true"/>
+  </category>
+  <category label="Dimmed Light">
+    <setting label="All" type="bool" id="b0_l0_dimmed_enable" default="false"/>
+    <setting label="- Color" type="labelenum" id="b0_l0_dimmed_color" values="white|off|violet|royal_blue|baby_blue|aqua|mint|seafoam_green|green|lime_green|yellow|yellow_orange|orange|red|pink|fuchsia|lilac|lavender" default="white" enable="eq(-1,true)" subsetting="true"/>
+    <setting label="- Brightness" type="slider" id="b0_l0_dimmed_brightness" default="5" range="0,1,28"  option="int" enable="eq(-2,true)" subsetting="true"/>
+    <setting type="sep"/>
+    <setting label="Group 1" type="bool" id="b0_l1_dimmed_enable" default="false"/>
+    <setting label="- Color" type="labelenum" id="b0_l1_dimmed_color" values="white|off|violet|royal_blue|baby_blue|aqua|mint|seafoam_green|green|lime_green|yellow|yellow_orange|orange|red|pink|fuchsia|lilac|lavender" default="white" enable="eq(-1,true)" subsetting="true"/>
+    <setting label="- Brightness" type="slider" id="b0_l1_dimmed_brightness" default="5" range="0,1,28"  option="int" enable="eq(-2,true)" subsetting="true"/>
+    <setting type="sep"/>
+    <setting label="Group 2" type="bool" id="b0_l2_dimmed_enable" default="false"/>
+    <setting label="- Color" type="labelenum" id="b0_l2_dimmed_color" values="white|off|violet|royal_blue|baby_blue|aqua|mint|seafoam_green|green|lime_green|yellow|yellow_orange|orange|red|pink|fuchsia|lilac|lavender" default="white" enable="eq(-1,true)" subsetting="true"/>
+    <setting label="- Brightness" type="slider" id="b0_l2_dimmed_brightness" default="5" range="0,1,28"  option="int" enable="eq(-2,true)" subsetting="true"/>
+    <setting type="sep"/>
+    <setting label="Group 3" type="bool" id="b0_l3_dimmed_enable" default="false"/>
+    <setting label="- Color" type="labelenum" id="b0_l3_dimmed_color" values="white|off|violet|royal_blue|baby_blue|aqua|mint|seafoam_green|green|lime_green|yellow|yellow_orange|orange|red|pink|fuchsia|lilac|lavender" default="white" enable="eq(-1,true)" subsetting="true"/>
+    <setting label="- Brightness" type="slider" id="b0_l3_dimmed_brightness" default="5" range="0,1,28"  option="int" enable="eq(-2,true)" subsetting="true"/>
+    <setting type="sep"/>
+    <setting label="Group 4" type="bool" id="b0_l4_dimmed_enable" default="false"/>
+    <setting label="- Color" type="labelenum" id="b0_l4_dimmed_color" values="white|off|violet|royal_blue|baby_blue|aqua|mint|seafoam_green|green|lime_green|yellow|yellow_orange|orange|red|pink|fuchsia|lilac|lavender" default="white" enable="eq(-1,true)" subsetting="true"/>
+    <setting label="- Brightness" type="slider" id="b0_l4_dimmed_brightness" default="5" range="0,1,28"  option="int" enable="eq(-2,true)" subsetting="true"/>
+  </category>
+  <category label="Reading Light">
+    <setting label="All" type="bool" id="b0_l0_reading_enable" default="false"/>
+    <setting label="- Color" type="labelenum" id="b0_l0_reading_color" values="white|off|violet|royal_blue|baby_blue|aqua|mint|seafoam_green|green|lime_green|yellow|yellow_orange|orange|red|pink|fuchsia|lilac|lavender" default="yellow" enable="eq(-1,true)" subsetting="true"/>
+    <setting label="- Brightness" type="slider" id="b0_l0_reading_brightness" default="15" range="0,1,28"  option="int" enable="eq(-2,true)" subsetting="true"/>
+    <setting type="sep"/>
+    <setting label="Group 1" type="bool" id="b0_l1_reading_enable" default="false"/>
+    <setting label="- Color" type="labelenum" id="b0_l1_reading_color" values="white|off|violet|royal_blue|baby_blue|aqua|mint|seafoam_green|green|lime_green|yellow|yellow_orange|orange|red|pink|fuchsia|lilac|lavender" default="yellow" enable="eq(-1,true)" subsetting="true"/>
+    <setting label="- Brightness" type="slider" id="b0_l1_reading_brightness" default="15" range="0,1,28"  option="int" enable="eq(-2,true)" subsetting="true"/>
+    <setting type="sep"/>
+    <setting label="Group 2" type="bool" id="b0_l2_reading_enable" default="false"/>
+    <setting label="- Color" type="labelenum" id="b0_l2_reading_color" values="white|off|violet|royal_blue|baby_blue|aqua|mint|seafoam_green|green|lime_green|yellow|yellow_orange|orange|red|pink|fuchsia|lilac|lavender" default="yellow" enable="eq(-1,true)" subsetting="true"/>
+    <setting label="- Brightness" type="slider" id="b0_l2_reading_brightness" default="15" range="0,1,28"  option="int" enable="eq(-2,true)" subsetting="true"/>
+    <setting type="sep"/>
+    <setting label="Group 3" type="bool" id="b0_l3_reading_enable" default="false"/>
+    <setting label="- Color" type="labelenum" id="b0_l3_reading_color" values="white|off|violet|royal_blue|baby_blue|aqua|mint|seafoam_green|green|lime_green|yellow|yellow_orange|orange|red|pink|fuchsia|lilac|lavender" default="yellow" enable="eq(-1,true)" subsetting="true"/>
+    <setting label="- Brightness" type="slider" id="b0_l3_reading_brightness" default="15" range="0,1,28"  option="int" enable="eq(-2,true)" subsetting="true"/>
+    <setting type="sep"/>
+    <setting label="Group 4" type="bool" id="b0_l4_reading_enable" default="false"/>
+    <setting label="- Color" type="labelenum" id="b0_l4_reading_color" values="white|off|violet|royal_blue|baby_blue|aqua|mint|seafoam_green|green|lime_green|yellow|yellow_orange|orange|red|pink|fuchsia|lilac|lavender" default="yellow" enable="eq(-1,true)" subsetting="true"/>
+    <setting label="- Brightness" type="slider" id="b0_l4_reading_brightness" default="15" range="0,1,28"  option="int" enable="eq(-2,true)" subsetting="true"/>
+  </category>
+  <category label="Video Light">
+    <setting label="All" type="bool" id="b0_l0_video_enable" default="false"/>
+    <setting label="- Color" type="labelenum" id="b0_l0_video_color" values="white|video|violet|royal_blue|baby_blue|aqua|mint|seafoam_green|green|lime_green|yellow|yellow_orange|orange|red|pink|fuchsia|lilac|lavender" default="green" enable="eq(-1,true)" subsetting="true"/>
+    <setting label="- Brightness" type="slider" id="b0_l0_video_brightness" default="15" range="0,1,28"  option="int" enable="eq(-2,true)" subsetting="true"/>
+    <setting type="sep"/>
+    <setting label="Group 1" type="bool" id="b0_l1_video_enable" default="false"/>
+    <setting label="- Color" type="labelenum" id="b0_l1_video_color" values="white|video|violet|royal_blue|baby_blue|aqua|mint|seafoam_green|green|lime_green|yellow|yellow_orange|orange|red|pink|fuchsia|lilac|lavender" default="green" enable="eq(-1,true)" subsetting="true"/>
+    <setting label="- Brightness" type="slider" id="b0_l1_video_brightness" default="15" range="0,1,28"  option="int" enable="eq(-2,true)" subsetting="true"/>
+    <setting type="sep"/>
+    <setting label="Group 2" type="bool" id="b0_l2_video_enable" default="false"/>
+    <setting label="- Color" type="labelenum" id="b0_l2_video_color" values="white|video|violet|royal_blue|baby_blue|aqua|mint|seafoam_green|green|lime_green|yellow|yellow_orange|orange|red|pink|fuchsia|lilac|lavender" default="green" enable="eq(-1,true)" subsetting="true"/>
+    <setting label="- Brightness" type="slider" id="b0_l2_video_brightness" default="15" range="0,1,28"  option="int" enable="eq(-2,true)" subsetting="true"/>
+    <setting type="sep"/>
+    <setting label="Group 3" type="bool" id="b0_l3_video_enable" default="false"/>
+    <setting label="- Color" type="labelenum" id="b0_l3_video_color" values="white|video|violet|royal_blue|baby_blue|aqua|mint|seafoam_green|green|lime_green|yellow|yellow_orange|orange|red|pink|fuchsia|lilac|lavender" default="green" enable="eq(-1,true)" subsetting="true"/>
+    <setting label="- Brightness" type="slider" id="b0_l3_video_brightness" default="15" range="0,1,28"  option="int" enable="eq(-2,true)" subsetting="true"/>
+    <setting type="sep"/>
+    <setting label="Group 4" type="bool" id="b0_l4_video_enable" default="false"/>
+    <setting label="- Color" type="labelenum" id="b0_l4_video_color" values="white|video|violet|royal_blue|baby_blue|aqua|mint|seafoam_green|green|lime_green|yellow|yellow_orange|orange|red|pink|fuchsia|lilac|lavender" default="green" enable="eq(-1,true)" subsetting="true"/>
+    <setting label="- Brightness" type="slider" id="b0_l4_video_brightness" default="15" range="0,1,28"  option="int" enable="eq(-2,true)" subsetting="true"/>
+  </category>
+  <category label="Movie Light">
+    <setting label="All" type="bool" id="b0_l0_movie_enable" default="false"/>
+    <setting label="- Color" type="labelenum" id="b0_l0_movie_color" values="white|off|violet|royal_blue|baby_blue|aqua|mint|seafoam_green|green|lime_green|yellow|yellow_orange|orange|red|pink|fuchsia|lilac|lavender" default="red" enable="eq(-1,true)" subsetting="true"/>
+    <setting label="- Brightness" type="slider" id="b0_l0_movie_brightness" default="15" range="0,1,28"  option="int" enable="eq(-2,true)" subsetting="true"/>
+    <setting type="sep"/>
+    <setting label="Group 1" type="bool" id="b0_l1_movie_enable" default="false"/>
+    <setting label="- Color" type="labelenum" id="b0_l1_movie_color" values="white|off|violet|royal_blue|baby_blue|aqua|mint|seafoam_green|green|lime_green|yellow|yellow_orange|orange|red|pink|fuchsia|lilac|lavender" default="red" enable="eq(-1,true)" subsetting="true"/>
+    <setting label="- Brightness" type="slider" id="b0_l1_movie_brightness" default="15" range="0,1,28"  option="int" enable="eq(-2,true)" subsetting="true"/>
+    <setting type="sep"/>
+    <setting label="Group 2" type="bool" id="b0_l2_movie_enable" default="false"/>
+    <setting label="- Color" type="labelenum" id="b0_l2_movie_color" values="white|off|violet|royal_blue|baby_blue|aqua|mint|seafoam_green|green|lime_green|yellow|yellow_orange|orange|red|pink|fuchsia|lilac|lavender" default="red" enable="eq(-1,true)" subsetting="true"/>
+    <setting label="- Brightness" type="slider" id="b0_l2_movie_brightness" default="15" range="0,1,28"  option="int" enable="eq(-2,true)" subsetting="true"/>
+    <setting type="sep"/>
+    <setting label="Group 3" type="bool" id="b0_l3_movie_enable" default="false"/>
+    <setting label="- Color" type="labelenum" id="b0_l3_movie_color" values="white|off|violet|royal_blue|baby_blue|aqua|mint|seafoam_green|green|lime_green|yellow|yellow_orange|orange|red|pink|fuchsia|lilac|lavender" default="red" enable="eq(-1,true)" subsetting="true"/>
+    <setting label="- Brightness" type="slider" id="b0_l3_movie_brightness" default="15" range="0,1,28"  option="int" enable="eq(-2,true)" subsetting="true"/>
+    <setting type="sep"/>
+    <setting label="Group 4" type="bool" id="b0_l4_movie_enable" default="false"/>
+    <setting label="- Color" type="labelenum" id="b0_l4_movie_color" values="white|off|violet|royal_blue|baby_blue|aqua|mint|seafoam_green|green|lime_green|yellow|yellow_orange|orange|red|pink|fuchsia|lilac|lavender" default="red" enable="eq(-1,true)" subsetting="true"/>
+    <setting label="- Brightness" type="slider" id="b0_l4_movie_brightness" default="15" range="0,1,28"  option="int" enable="eq(-2,true)" subsetting="true"/>
+  </category>
+  <category label="TV Light">
+    <setting label="All" type="bool" id="b0_l0_tv_enable" default="false"/>
+    <setting label="- Color" type="labelenum" id="b0_l0_tv_color" values="white|off|violet|royal_blue|baby_blue|aqua|mint|seafoam_green|green|lime_green|yellow|yellow_orange|orange|red|pink|fuchsia|lilac|lavender" default="blue" enable="eq(-1,true)" subsetting="true"/>
+    <setting label="- Brightness" type="slider" id="b0_l0_tv_brightness" default="15" range="0,1,28"  option="int" enable="eq(-2,true)" subsetting="true"/>
+    <setting type="sep"/>
+    <setting label="Group 1" type="bool" id="b0_l1_tv_enable" default="false"/>
+    <setting label="- Color" type="labelenum" id="b0_l1_tv_color" values="white|off|violet|royal_blue|baby_blue|aqua|mint|seafoam_green|green|lime_green|yellow|yellow_orange|orange|red|pink|fuchsia|lilac|lavender" default="blue" enable="eq(-1,true)" subsetting="true"/>
+    <setting label="- Brightness" type="slider" id="b0_l1_tv_brightness" default="15" range="0,1,28"  option="int" enable="eq(-2,true)" subsetting="true"/>
+    <setting type="sep"/>
+    <setting label="Group 2" type="bool" id="b0_l2_tv_enable" default="false"/>
+    <setting label="- Color" type="labelenum" id="b0_l2_tv_color" values="white|off|violet|royal_blue|baby_blue|aqua|mint|seafoam_green|green|lime_green|yellow|yellow_orange|orange|red|pink|fuchsia|lilac|lavender" default="blue" enable="eq(-1,true)" subsetting="true"/>
+    <setting label="- Brightness" type="slider" id="b0_l2_tv_brightness" default="15" range="0,1,28"  option="int" enable="eq(-2,true)" subsetting="true"/>
+    <setting type="sep"/>
+    <setting label="Group 3" type="bool" id="b0_l3_tv_enable" default="false"/>
+    <setting label="- Color" type="labelenum" id="b0_l3_tv_color" values="white|off|violet|royal_blue|baby_blue|aqua|mint|seafoam_green|green|lime_green|yellow|yellow_orange|orange|red|pink|fuchsia|lilac|lavender" default="blue" enable="eq(-1,true)" subsetting="true"/>
+    <setting label="- Brightness" type="slider" id="b0_l3_tv_brightness" default="15" range="0,1,28"  option="int" enable="eq(-2,true)" subsetting="true"/>
+    <setting type="sep"/>
+    <setting label="Group 4" type="bool" id="b0_l4_tv_enable" default="false"/>
+    <setting label="- Color" type="labelenum" id="b0_l4_tv_color" values="white|off|violet|royal_blue|baby_blue|aqua|mint|seafoam_green|green|lime_green|yellow|yellow_orange|orange|red|pink|fuchsia|lilac|lavender" default="blue" enable="eq(-1,true)" subsetting="true"/>
+    <setting label="- Brightness" type="slider" id="b0_l4_tv_brightness" default="15" range="0,1,28"  option="int" enable="eq(-2,true)" subsetting="true"/>
+  </category>
+  <category label="Music Light">
+    <setting label="All" type="bool" id="b0_l0_music_enable" default="false"/>
+    <setting label="- Color" type="labelenum" id="b0_l0_music_color" values="white|off|violet|royal_blue|baby_blue|aqua|mint|seafoam_green|green|lime_green|yellow|yellow_orange|orange|red|pink|fuchsia|lilac|lavender" default="green" enable="eq(-1,true)" subsetting="true"/>
+    <setting label="- Brightness" type="slider" id="b0_l0_music_brightness" default="15" range="0,1,28"  option="int" enable="eq(-2,true)" subsetting="true"/>
+    <setting type="sep"/>
+    <setting label="Group 1" type="bool" id="b0_l1_music_enable" default="false"/>
+    <setting label="- Color" type="labelenum" id="b0_l1_music_color" values="white|off|violet|royal_blue|baby_blue|aqua|mint|seafoam_green|green|lime_green|yellow|yellow_orange|orange|red|pink|fuchsia|lilac|lavender" default="green" enable="eq(-1,true)" subsetting="true"/>
+    <setting label="- Brightness" type="slider" id="b0_l1_music_brightness" default="15" range="0,1,28"  option="int" enable="eq(-2,true)" subsetting="true"/>
+    <setting type="sep"/>
+    <setting label="Group 2" type="bool" id="b0_l2_music_enable" default="false"/>
+    <setting label="- Color" type="labelenum" id="b0_l2_music_color" values="white|off|violet|royal_blue|baby_blue|aqua|mint|seafoam_green|green|lime_green|yellow|yellow_orange|orange|red|pink|fuchsia|lilac|lavender" default="green" enable="eq(-1,true)" subsetting="true"/>
+    <setting label="- Brightness" type="slider" id="b0_l2_music_brightness" default="15" range="0,1,28"  option="int" enable="eq(-2,true)" subsetting="true"/>
+    <setting type="sep"/>
+    <setting label="Group 3" type="bool" id="b0_l3_music_enable" default="false"/>
+    <setting label="- Color" type="labelenum" id="b0_l3_music_color" values="white|off|violet|royal_blue|baby_blue|aqua|mint|seafoam_green|green|lime_green|yellow|yellow_orange|orange|red|pink|fuchsia|lilac|lavender" default="green" enable="eq(-1,true)" subsetting="true"/>
+    <setting label="- Brightness" type="slider" id="b0_l3_music_brightness" default="15" range="0,1,28"  option="int" enable="eq(-2,true)" subsetting="true"/>
+    <setting type="sep"/>
+    <setting label="Group 4" type="bool" id="b0_l4_music_enable" default="false"/>
+    <setting label="- Color" type="labelenum" id="b0_l4_music_color" values="white|off|violet|royal_blue|baby_blue|aqua|mint|seafoam_green|green|lime_green|yellow|yellow_orange|orange|red|pink|fuchsia|lilac|lavender" default="green" enable="eq(-1,true)" subsetting="true"/>
+    <setting label="- Brightness" type="slider" id="b0_l4_music_brightness" default="15" range="0,1,28"  option="int" enable="eq(-2,true)" subsetting="true"/>
+  </category>
+  <category label="Off Light">
+    <setting label="All" type="bool" id="b0_l0_off_enable" default="false"/>
+    <setting label="- Color" type="labelenum" id="b0_l0_off_color" values="white|off|violet|royal_blue|baby_blue|aqua|mint|seafoam_green|green|lime_green|yellow|yellow_orange|orange|red|pink|fuchsia|lilac|lavender" default="off" enable="eq(-1,true)" subsetting="true"/>
+    <setting label="- Brightness" type="slider" id="b0_l0_off_brightness" default="0" range="0,1,28"  option="int" enable="eq(-2,true)" subsetting="true"/>
+    <setting type="sep"/>
+    <setting label="Group 1" type="bool" id="b0_l1_off_enable" default="false"/>
+    <setting label="- Color" type="labelenum" id="b0_l1_off_color" values="white|off|violet|royal_blue|baby_blue|aqua|mint|seafoam_green|green|lime_green|yellow|yellow_orange|orange|red|pink|fuchsia|lilac|lavender" default="off" enable="eq(-1,true)" subsetting="true"/>
+    <setting label="- Brightness" type="slider" id="b0_l1_off_brightness" default="0" range="0,1,28"  option="int" enable="eq(-2,true)" subsetting="true"/>
+    <setting type="sep"/>
+    <setting label="Group 2" type="bool" id="b0_l2_off_enable" default="false"/>
+    <setting label="- Color" type="labelenum" id="b0_l2_off_color" values="white|off|violet|royal_blue|baby_blue|aqua|mint|seafoam_green|green|lime_green|yellow|yellow_orange|orange|red|pink|fuchsia|lilac|lavender" default="off" enable="eq(-1,true)" subsetting="true"/>
+    <setting label="- Brightness" type="slider" id="b0_l2_off_brightness" default="0" range="0,1,28"  option="int" enable="eq(-2,true)" subsetting="true"/>
+    <setting type="sep"/>
+    <setting label="Group 3" type="bool" id="b0_l3_off_enable" default="false"/>
+    <setting label="- Color" type="labelenum" id="b0_l3_off_color" values="white|off|violet|royal_blue|baby_blue|aqua|mint|seafoam_green|green|lime_green|yellow|yellow_orange|orange|red|pink|fuchsia|lilac|lavender" default="off" enable="eq(-1,true)" subsetting="true"/>
+    <setting label="- Brightness" type="slider" id="b0_l3_off_brightness" default="0" range="0,1,28"  option="int" enable="eq(-2,true)" subsetting="true"/>
+    <setting type="sep"/>
+    <setting label="Group 4" type="bool" id="b0_l4_off_enable" default="false"/>
+    <setting label="- Color" type="labelenum" id="b0_l4_off_color" values="white|off|violet|royal_blue|baby_blue|aqua|mint|seafoam_green|green|lime_green|yellow|yellow_orange|orange|red|pink|fuchsia|lilac|lavender" default="off" enable="eq(-1,true)" subsetting="true"/>
+    <setting label="- Brightness" type="slider" id="b0_l4_off_brightness" default="0" range="0,1,28"  option="int" enable="eq(-2,true)" subsetting="true"/>
+  </category>
+  <category label="debug">
+    <setting label="debug" type="enum" id="debug" values="off|normal|verbose" default="0"/>
+  </category>    
+</settings>

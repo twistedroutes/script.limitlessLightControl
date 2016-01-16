@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="script.limitlessLightControl" name="LimitlessLightControl" version="2016.01.16.1527" provider-name="gjj">
+  <requires>
+		<import addon="xbmc.python" version="2.14.0"/>
+    <import addon="script.module.requests" version="2.3.0" optional="false"/>
+	</requires>
+	<extension point="xbmc.python.script" library="addon.py">
+		<provides>executable</provides>
+	</extension>
+  <extension point="xbmc.service" library="service.py" start="startup"/>
+	<extension point="xbmc.addon.metadata">
+		<platform>all</platform>
+		<summary lang="en_GB">Limitless Light Scene Changer</summary>
+		<description lang="en_GB">Chenge lighting of the LimitlessLED/MiLight (and others) lights on demand and in response to player activities, such as automatically setting the lighting for a movie</description>
+    <disclaimer>Only tested with the v4 wifi bridge</disclaimer>
+    <license>GNU General Public License, v2</license>
+		<language></language>
+		<forum></forum>
+		<source>https://github.com/twistedroutes/script.liitlessLightControl</source>
+		<email></email>
+	</extension>
+</addon>
