@@ -1,7 +1,13 @@
 ## script.LimitlessLightControl
 
 This project enables control of [LimitlessLED](http://limitlessled.com)/[MiLight](http://www.milight.com/) bridges and light groups directly from Kodi without the need for running an additional home automation controller.
-It has the ability to set lighting scenes based on Kodi activity (e.g. when playing a video)
+It has the ability to set lighting scenes based on Kodi activity (e.g. when playing a video).  With scenes configured to control the color and brightness of selected light groups, you cn then associate them with activities.  The script can automate the transition between scenes, based on the present activity or you can set the scenes manually.
+
+An example setup may have:
+  * when playing a movie - dim the lights and set the color to red
+  * when pausing, lighten the color, say yellow, and brigher...so I can find my M&M's
+  * when resuming, return to the movie settings
+  * when stopping, set to normal brightness
 
 ### Setup
 While there are many options, setup is fairly straight forward.
@@ -29,8 +35,8 @@ Scenes configure a lighting configuration (which lights/lightGroups, color, brig
 * Configure the color and Brightness
   * 0 Brightness = off
 * Scenes available to configure are
-  * Normal	- recommend using this as you "on" light
-  * Dimmed	- recommend setting this as your preferred dimmed or 'sexy-time' light
+  * Normal	 - recommend using this as you "on" light
+  * Dimmed	 - recommend setting this as your preferred dimmed or 'sexy-time' light
   * Reading  - recommend an orange or yellow, slightly dimmed setting which seems comfortable for reading
   * Video    - recommend a red or blue light, works well behind the TV
   * Movie    - recommend a red or blue light, works well behind the TV
@@ -62,3 +68,4 @@ Various skins allow menu customization.  In my case, I am using the "Arctic Zeph
 * Multiple bridges (need more lights and bridges)
 * Dynamic TV/Movie color (based on average picture color)
 * Dynamic Music color (based on music beat)
+* Test with a v5 bridge (which resolves some responsiveness problems.  If you suffer these, reboot your bridge)
