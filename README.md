@@ -46,6 +46,9 @@ Various skins allow menu customization.  In my case, I am using the "Arctic Zeph
 * Lights-Settings - RunScript(script.limitlessLightControl,"settings")
 * Lights-Events   - RunScript(script.limitlessLightControl,"toggle") 
 
+### Video
+[![youtube Demo](http://img.youtube.com/vi/V16p14rEcL4/0.jpg)](https://youtu.be/V16p14rEcL4 "LimitlessLightControl early demo")
+
 ### Screenshots
 [![001](http://ibin.co/2ThgIQN5py3G)](http://ibin.co/2ThdZVxCKIeO)
 [![002](http://ibin.co/2ThgLEaaYh2v)](http://ibin.co/2ThdhwbgU6rI)
