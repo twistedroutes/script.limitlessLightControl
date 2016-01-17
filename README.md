@@ -4,6 +4,8 @@ This project enables control of [LimitlessLED](http://limitlessled.com)/[MiLight
 It has the ability to set lighting scenes based on Kodi activity (e.g. when playing a video).  With scenes configured to control the color and brightness of selected light groups, you can then associate them with activities.  
 The script can automate the transition between scenes, based on the present activity or you can set the scenes manually.
 
+_The lights are also marketed as EasyBulb, AppLight, AppLamp, MiLight, LEDme, dekolight or iLight_
+
 An example setup may have:
   * when playing a movie - dim the lights and set the color to red
   * when pausing, lighten the color, say yellow, and brigher...so I can find my M&M's
