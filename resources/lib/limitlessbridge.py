@@ -24,7 +24,7 @@ class LimitlessBridge():
     def applyScene(self,scene):
         # get our bridge elements from the scenes lightGroups
         lights = scene.getLights(self)
-        utils.log_verbose("Number of LightGroups: " + str(len(lights)))
+        utils.log_verbose(scene.name + " # LightGroups: " + str(len(lights)))
         for light in lights:
             animate=scene.animate
             reference = self.state[light.groupid]
@@ -53,7 +53,7 @@ class LimitlessBridge():
         try:
             family, type, proto, canonname, sockaddr = socket.getaddrinfo(self.ipaddress, self.port)[0]
             sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-            for i in LimitlessBridge.SOCKETRESEND:
+            for i in LimitlessBridge.SOCKETRESEND:                
                 sock.sendto(data_ba, (sockaddr[0], sockaddr[1]))
             sock.close()
             del(sock)
